@@ -1,7 +1,5 @@
 Synchronous FIFO with Zero-Latency Bypass
 
-
-👋 The "Why" Behind This Project
 As an ECE student, I wanted to move past basic "textbook" buffers and build something that solves a real problem: latency. Standard FIFOs usually make you wait for a clock edge to see your data. I designed this one to be faster by adding a Zero-Latency Bypass, making it ideal for high-speed pipelines where every nanosecond matters.
 
 
