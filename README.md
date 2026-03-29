@@ -36,5 +36,21 @@ Open the tool and navigate to the /sim folder.
 Type do run.do in the console.
 You’ll see the log confirm: --- ALL CONCEPTS & DATA INTEGRITY VERIFIED ---.
 
+### **📊 Simulation Results**
+
+#### **1. Full Verification Overview**
+![Full Simulation](full_sim_1.png)
+![Full Simulation](full_sim_2.png)
+[cite_start]*Complete simulation run demonstrating the sequential flow of data and status flag transitions.* 
+
+#### **2. Zero-Latency Bypass Proof**
+![Bypass Proof](bypass_proof.png)
+[cite_start]*Proof of single-cycle data propagation: `data_out` reflects `data_in` instantly when the FIFO is empty.* 
+
+#### **3. Watermark Assertions**
+![Watermark Proof](watermark_proof_almost_full.png)
+![Watermark Proof](watermark_proof_almost_empty.png)
+[cite_start]*Proof of programmable flow control: `almost_full` (Threshold=6) triggering accurately based on internal count. almost_empty (Threshold=2) asserting correctly as the buffer depletes, providing early signaling to the system.*
+
 👨‍💻 About the Author
 I'm Shritan Reddy Kasula, a 3rd-year ECE student at VNRVJIET. I’m an aspiring Embedded and VLSI engineer who loves taking different hardware ideas and turning them into working designs. My goal is to eventually contribute to innovative semiconductor development.
