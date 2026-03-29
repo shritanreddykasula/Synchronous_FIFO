@@ -6,10 +6,10 @@ vlib work
 vlog fifo_sync_adv.sv
 vlog fifo_sync_adv_test.sv
 
-# --- Modified Elaboration ---
+# Elaboration
 vsim -voptargs=+acc work.fifo_tb
 
-# --- Modified Add Wave ---
+# Add Wave
 add wave *
 add wave -r /fifo_tb/dut/*
 
