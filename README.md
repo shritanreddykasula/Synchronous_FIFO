@@ -24,9 +24,9 @@ I didn't just write the code—I put it through a "lie detector" test using a Se
 
 📂 What’s Inside?
 
-rtl/: The core SystemVerilog design logic.
-Testbench/: The self-checking testbench.
-sim/: A Tcl script (run.do) to run the whole simulation with one click.
+fifo_sync_adv.sv/: The core SystemVerilog design logic.
+fifo_sync_adv_test.sv/: The self-checking testbench.
+run.do/: A Tcl script to run the whole simulation with one click.
 
 
 🚀 Want to see it run?
