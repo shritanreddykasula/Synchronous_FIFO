@@ -28,16 +28,20 @@ If you have **QuestaSim** or **ModelSim**:
 
 # 📊 Simulation Results
 
-# 1. Full Verification Overview
+# 1. Verification Transcript (The Final Verdict)
+![Verification Transcript](docs/output_transcript.png)
+*Automated Verification Log: This transcript confirms that the self-checking testbench passed all 6 critical test steps, finishing with the "ALL CONCEPTS & DATA INTEGRITY VERIFIED" status.*
+
+# 2. Full Verification Overview
 ![Full Simulation 1](docs/full_sim_1.png)
 ![Full Simulation 2](docs/full_sim_2.png)
 *Complete simulation run demonstrating the sequential flow of data, reset, and status flag transitions.*
 
-# 2. Zero-Latency Bypass Proof
+# 3. Zero-Latency Bypass Proof
 ![Bypass Proof](docs/bypass_proof.png)
 *Proof of single-cycle data propagation: `data_out` reflects `data_in` instantly when the FIFO is empty.*
 
-# 3. Watermark Assertions
+# 4. Watermark Assertions
 ![Watermark Almost Full](docs/watermark_proof_almost_full.png)
 ![Watermark Almost Empty](docs/watermark_proof_almost_empty.png)
 *Proof of programmable flow control: `almost_full` (Threshold=6) and `almost_empty` (Threshold=2) triggering accurately based on internal count.*
